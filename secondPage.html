@@ -5,11 +5,19 @@
     </head>
     <style>
     .dropdown{
+        margin-top:210px;
         font-size: 24px;
+    }
+    .container {
+        position: absolute;
+        font-size: 18px;
     }
     </style>
     <body>
-        <img src="Mustard_Logo.png">
+        <img class="container" src="Mustard_Logo.png"
+            width="980"
+            height="201">
+        <p>
         <label for="Titles" class="fonts">Choose a title:</label>
         <select class=dropdown name="Titles" id="Titles">
             <option value="Mr">Mr</option>
@@ -20,5 +28,6 @@
             <option value="Dr">Dr</option>
             <option value="Other">Other</option>
         </select>
+        </p>
     </body>
     </html>
