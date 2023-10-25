@@ -27,10 +27,9 @@ html, body {
 .donation {
     border: none;
     color: white;
-    padding: 52px 180px;
+    padding: 104px 360px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     margin-left: 35px;
     cursor: pointer;
@@ -62,10 +61,8 @@ button:hover {
     <div class="center font-family">
         <h2><b>How often would you like to donate:</b></h2>
     </div>
-    <p style="display:inline-block;">
-        <button id="goToPage2" class="donation">One-Off</button>
-        <button id="goToPage2" class="donation">Monthly</button>
-    </p>
+    <button id="goToPage2" class="donation">One-Off</button>
+    <button id="goToPage2" class="donation">Monthly</button>
     <script type="text/javascript">
         document.getElementById("goToPage2").onclick = function () {
             location.href = "secondPage.html";
