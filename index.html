@@ -16,6 +16,7 @@ html, body {
 }
 .font-style{
     font-family: Arial, Helvetica, sans-serif;
+    word-wrap: break-word;
 }
 .container {
     position: absolute;
@@ -30,8 +31,9 @@ html, body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    margin: auto;
+    margin-left: 30px;
     font-size: 16px;
-    margin-left: 35px;
     cursor: pointer;
     border-radius: 12px;
     background-color: #AE1022;
@@ -41,25 +43,29 @@ button:hover {
     background-color: #901022;
     color: white;
 }
+.inline{
+    text-align:center;
+    width:100%;
+}
 </style>
 <body>
     <div class="contain">
         <img src="Mustard_Logo.png"
-        width=100%>
+        width=100%  >
     </div>
-    <div class="center font-family">
+    <div class="center font-style">
         <p>Thank you for choosing to donate to Mustard Tree, even the smallest of donations make the biggest different to our mission
         </p>
     </div>
-    <div class="center font-family">
+    <div class="center font-style">
         <p>
             How often would you like to donate:
         </p>
     </div>
-    <p style="display:inline-block;">
+    <div class = "inline">
         <button id="goToPage2-1" class="donation">One-Off</button>
         <button id="goToPage2-2" class="donation">Monthly</button>
-    </p>
+    </div>
     <script type="text/javascript">
         document.getElementById("goToPage2-1").onclick = function () {
             location.href = "tempScreen.html";
