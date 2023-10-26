@@ -1,63 +1,67 @@
 <!DOCTYPE html>
-    <html>
-    <head>
-    <title>Page Title</title>
-    </head>
-    <style>
-    .center{
-        text-align: center;
-        position: relative;
-    }
-    .dropdown{
-        font-size: 48px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    input[type=text]{
-        width: 200px;
-        padding: 12px 20px;
-    }
-    progress{
-            width:100%;
-            border: 2px solid #303030;
-            border-radius: 12px;
-            position:sticky;
-            top: 0;
-    }
-    progress::-webkit-progress-bar{
-        background-color: white;
-    }
-    progress::-webkit-progress-value {
-        background-color: #AE1022;
-    }
-    special{
-        width: 120px;
-        height: 40px;
-    }
-    </style>
-    <body>
-        <img src="Mustard_Logo.png"
-            width=100%>
-        <progress value="25" max="100"></progress>
-        <form class="center dropdown" action="tempScreen.html">
-            <label for="Titles" class="dropdown">Choose a title:</label>
-            <select class=dropdown name="Titles" id="Titles">
-                <option value="Mr">Mr</option>
-                <option value="Mrs">Mrs</option>
-                <option value="Miss">Miss</option>
-                <option value="Ms">Ms</option>
-                <option value="Mx">Mx</option>
-                <option value="Dr">Dr</option>
-                <option value="Other">Other</option>
-            </select><br>
-            <label for="fname">First Name:</label><br>
-            <input type="text" type="#303030" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email"><br>
-            <label for="phone">Phone:</label><br>
-            <input type="text" id="phone" name="phone"><br>
-            <button class="center special" id="button">Submit</button><br>
-        </form>
-    </body>
-    </html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<style>
+.center{
+    text-align: center;
+    position: relative;
+}
+.dropdown{
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input[type=text]{
+    width: 200px;
+    padding: 12px 20px;
+    border-radius: 12px;
+    border-color: #AE1022;
+}
+progress{
+        width:100%;
+        border: 2px solid #303030;
+        border-radius: 12px;
+        position:sticky;
+        top: 0;
+}
+progress::-webkit-progress-bar{
+    background-color: white;
+}
+progress::-webkit-progress-value {
+    background-color: #AE1022;
+}
+.special{
+    width:200px;
+    height: 40px;
+    background-color: #AE1022;
+    border-radius: 12px;
+}
+</style>
+<body>
+    <img src="Mustard_Logo.png"
+        width=100%>
+    <progress value="25" max="100"></progress>
+    <form class="center dropdown" action="tempScreen.html">
+        <label for="Titles" class="dropdown">Choose a title:</label>
+        <select class=dropdown name="Titles" id="Titles">
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Miss">Miss</option>
+            <option value="Ms">Ms</option>
+            <option value="Mx">Mx</option>
+            <option value="Dr">Dr</option>
+            <option value="Other">Other</option>
+        </select><br>
+        <label for="fname">First Name:</label><br>
+        <input type="text" type="#303030" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <label for="phone">Phone:</label><br>
+        <input type="text" id="phone" name="phone"><br>
+        <button class="center special" id="button">Submit</button><br>
+    </form>
+</body>
+</html>
