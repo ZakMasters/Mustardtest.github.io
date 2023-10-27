@@ -44,11 +44,16 @@ progress::-webkit-progress-value {
     background-color: #303030;
     font-size: 24px;
 }
+button:hover {
+    background-color: #901022;
+    color: white;
+    cursor: pointer;
+}
 </style>
 <body>
     <img src="Mustard_Logo.png"
         width=100%>
-    <form class="center dropdown">
+    <form class="center dropdown" action="secondPage.html">
         <progress value="25" max="100"></progress>
         <p></p>
         <label>How much would you like to donate?</label>
@@ -66,9 +71,4 @@ progress::-webkit-progress-value {
         <button class="center special" id="button">Submit</button><br>
     </form>
 </body>
-<script type="text/javascript">
-    document.getElementById("button").onclick = function () {
-            location.href = "secondPage.html";
-        };
-</script>
 </html>
