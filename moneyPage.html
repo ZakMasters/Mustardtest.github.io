@@ -52,26 +52,13 @@ progress::-webkit-progress-value {
         <progress value="25" max="100"></progress>
         <label>How much would you like to donate?</label>
         <br>
-        <button class='greyscale' onclick="fivePounds()">5 Pounds</button><br>
-        <button class='greyscale' onclick="tenPounds()">10 Pounds</button><br>
-        <button class='greyscale' onclick="twentyPounds()">20 Pounds</button><br>
+        <select class=dropdown name="Amounts" id="Amounts">
+            <option value="5 Pounds">5 Pounds</option>
+            <option value="10 Pounds">10 Pounds</option>
+            <option value="20 Pounds">20 Pounds</option>
+        </select><br>
         <label for="Other">Other Amount:</label><br>
         <input type="text"><br>
-        <label id="Label">Current Selected: </label>
     </form>
 </body>
-<script>
-function fivePounds() { 
-            document.getElementById('Label').innerHTML 
-                = 'Current Selected: 5 Pounds'; 
-        } 
-function tenPounds() { 
-            document.getElementById('Label').innerHTML 
-                = 'Current Selected: 10 Pounds'; 
-        } 
-function twentyPounds() { 
-            document.getElementById('Label').innerHTML 
-                = 'Current Selected: 20 Pounds'; 
-        } 
-</script>
 </html>
