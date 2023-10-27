@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<style>
+.center{
+    text-align: center;
+    position: relative;
+}
+.dropdown{
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input[type=text]{
+    width: 200px;
+    padding: 12px 20px;
+    border-radius: 12px;
+    border-color: #AE1022;
+}
+progress{
+        width:100%;
+        border: 2px solid #303030;
+        border-radius: 12px;
+        position:sticky;
+        top: 0;
+}
+progress::-webkit-progress-bar{
+    background-color: white;
+}
+progress::-webkit-progress-value {
+    background-color: #AE1022;
+}
+.special{
+    width:200px;
+    height: 40px;
+    background-color: #AE1022;
+    border-radius: 12px;
+    font-size: 24px;
+}
+.greyscale{
+    width:200px;
+    height: 40px;
+    background-color: #303030;
+    font-size: 24px;
+}
+</style>
+<body>
+    <img src="Mustard_Logo.png"
+        width=100%>
+    <form class="center dropdown">
+        <progress value="25" max="100"></progress>
+        <label>How much would you like to donate?</label>
+        <br>
+        <button class='greyscale' onclick="fivePounds()">5 Pounds</button><br>
+        <button class='greyscale' onclick="tenPounds()">10 Pounds</button><br>
+        <button class='greyscale' onclick="twentyPounds()">20 Pounds</button><br>
+        <label for="Other">Other Amount:</label><br>
+        <input type="text"><br>
+        <label id="Label">Current Selected: </label>
+    </form>
+</body>
+<script>
+function fivePounds() { 
+            document.getElementById('Label').innerHTML 
+                = 'Current Selected: 5 Pounds'; 
+        } 
+function tenPounds() { 
+            document.getElementById('Label').innerHTML 
+                = 'Current Selected: 10 Pounds'; 
+        } 
+function twentyPounds() { 
+            document.getElementById('Label').innerHTML 
+                = 'Current Selected: 20 Pounds'; 
+        } 
+</script>
+</html>
